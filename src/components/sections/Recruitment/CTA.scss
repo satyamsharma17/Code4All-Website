@@ -1,0 +1,104 @@
+.rec-cta {
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  .cta-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 5%;
+    background-color: #ffffff09;
+    border-radius: 20px;
+    height: 100%;
+    .cta-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        padding-right:10%;
+        height: 100%;
+        h2{
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 1rem;
+            margin:10px 0;
+            padding:0;
+        }
+        p{
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        a{
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: #56c195;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                color: #11100e;
+            }
+        }
+    }
+    .img-holder{
+        display: flex;
+        justify-content: center;
+
+    }
+  }
+}
+/*--responsive--*/
+@media only screen and (max-width: 1024px) {
+  .rec-cta {
+    .cta-container {
+      .cta-content {
+        width: 100%;
+        h2 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+        a {
+          font-size: 1rem;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .rec-cta {
+    .cta-container {
+      .cta-content {
+        width: 100%;
+        text-align: center;
+        padding-right:0;
+        h2 {
+          font-size: 1.5rem;
+          margin: 0 auto;
+        }
+        p {
+          font-size: 1rem;
+        }
+        a {
+          font-size: 1rem;
+          padding: 5px 10px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .rec-cta .cta-container {
+    flex-direction: column-reverse;}
+}

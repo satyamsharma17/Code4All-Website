@@ -1,0 +1,74 @@
+/* Import Fonts from TTF Files */
+@font-face {
+    font-family: Astro;
+    src: url(/assets/astro.ttf);
+  }
+  @font-face {
+      font-family: Aboved;
+      src: url(/assets/above.ttf);
+    }
+
+    
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat+Alternates:wght@500&family=Share+Tech+Mono&family=Space+Mono&display=swap');
+
+
+
+.recruitment-landing{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+
+}
+.content h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: Astro;
+
+
+}
+.content p{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    
+font-family: 'Share Tech Mono', monospace;
+
+}
+.content a{
+    font-size: 1rem;
+    color: #151719 !important;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    background: #24B47E;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*--responsive--*/
+@media only screen and (max-width: 768px) {
+    .content h1{
+        font-size: 2rem;
+    }
+    .content p{
+        font-size: 1.2rem;
+    }
+    .content a{
+        font-size: .8rem;
+        padding: .5rem 1rem;
+    }
+}
