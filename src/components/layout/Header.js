@@ -132,11 +132,11 @@ const Header = ({
                         &lt;React Drift/&gt;
                       </Link>
                     </li> */}
-                    <li>
+                    {/* <li>
                       <Link to="/recruitment" onClick={closeMenu}>
                         &lt;Recruitment/&gt;
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                   {!hideSignin && (
                     <ul className="list-reset header-nav-right"></ul>
